@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js on Flask</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="{{ url_for('static', filename='js/sketch_b_01.js', _external=True) }}?v={{ config['MY_APP_VERSION'] }}"></script>
+</head>
+<body>
+    <div>
+        <input type="text" id="coordinates" readonly>
+        <input type="text" id="result" readonly>
+        <input type="text" id="number" readonly>
+    </div>
+    <select id="imageSelector">
+        <option value="1">Image 1</option>
+        <option value="2">Image 2</option>
+        <option value="3">Image 3</option>
+        <option value="4">Image 4</option>
+        <option value="5">Image 5</option>
+      </select>
+</body>
+</html>

@@ -1,0 +1,102 @@
+{% extends "bootstrap/base.html" %}
+{% block title %} Steering behaviour {% endblock title %}
+
+{% block head %}
+{{ super() }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+<script src="{{ url_for('static', filename='js/sketch.js', _external=True) }}"></script>
+<script src="{{ url_for('static', filename='js/circle.js', _external=True)  }}"></script>
+{% endblock head %}
+
+{% block content %}
+<div class="container">
+  <h1 class="text-center"> Enjoy the interaction! </h1>
+  <p class="text-justify">
+    <small>
+      test sample
+    </small>
+  </p>
+
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-xs-2 small">
+        <table class="table table-striped">
+          <tr>
+
+          </tr>
+          <tr>
+            <td>
+              Message
+            </td>
+            <td>
+              <div id='messageBox'>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Text Size
+            </td>
+            <td>
+              <div id='textSize'>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Number of particles
+            </td>
+            <td>
+              <div id='nParticles'>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Desire
+            </td>
+            <td>
+              <div id='maxSeekVel'>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Fear
+            </td>
+            <td>
+              <div id='maxFleeVel'>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Sight
+            </td>
+            <td>
+              <div id='sight'>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id='redrawButton'>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-xs-10">
+        <div id="canvasHolder" style="display: flex; align-items: flex-start; justify-content:right;">
+        <!-- <div id="canvasHolder" align="center"> -->
+          <!-- <img src="data:image/png;base64,{{ img_data }}" id="scaled_image" style="display: none;"> -->
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+{% endblock content %}

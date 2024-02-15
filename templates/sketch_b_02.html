@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js on Flask</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- <script src="{{ url_for('static', filename='js/sketch2.js') }}"></script> -->
+    <script src="{{ url_for('static', filename='js/sketch_b_02.js', _external=True) }}?v={{ config['MY_APP_VERSION'] }}"></script>
+</head>
+<body>
+</body>
+</html>

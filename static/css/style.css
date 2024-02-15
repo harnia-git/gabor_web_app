@@ -1,0 +1,16 @@
+h1 {
+    color: rgb(255, 255, 255);
+    border-bottom: double 6px #d487fa;
+}
+
+body {
+    background: linear-gradient(to right,#e60000,#f39800,#fff100,#009944,#0068b7,#1d2088,#920783,#e60000) 0 / 100%;
+}
+
+h2 {
+    color:rgb(255, 255, 255);
+}
+
+a {
+    color:rgb(255, 255, 255);
+}
